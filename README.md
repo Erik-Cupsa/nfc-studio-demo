@@ -73,7 +73,7 @@ The browser owns scene state; it is not synchronized between phone and Mac. A re
 Original code and artwork created for SWErikCodes. No third-party artwork or application source copied. Setup based on:
 
 - [Apple: Add automations, current iOS guide](https://support.apple.com/en-ie/guide/shortcuts/apdfbdbd7123/ios)
-- [Apple: Setting triggers, NFC identifier behavior](https://support.apple.com/en-ie/guide/shortcuts/apde31e9638b/ios)
+- [Apple: Setting triggers, NFC identifier behavior](https://support.apple.com/en-ie/guide/shortcuts/setting-triggers-apde31e9638b/9.0/ios/26)
 - [NXP: NTAG213/215/216 datasheet](https://www.nxp.com/docs/en/data-sheet/NTAG213_215_216.pdf)
 - [Lloyd's: Siri Shortcuts through app routines](https://lloydscorp.com/manual-foco/index.html)
 
