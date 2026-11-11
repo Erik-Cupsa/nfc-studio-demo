@@ -61,16 +61,22 @@
 <button data-scene="rose" aria-pressed="false"><span class="swatch rose"></span>Rose</button>
 </div>
 <button class="primary" id="next">Change scene <span aria-hidden="true">↻</span></button>
+<button class="rehearse" id="rehearse">Rehearse tap in 3 seconds</button>
 <p id="status" class="status" role="status">Try a scene, then connect your sticker.</p>
 <div class="utility"><button id="reset">Reset rehearsal</button><button id="setup-button" aria-expanded="false" aria-controls="setup">Connect a sticker</button></div>
 </section>
 <section id="setup" hidden>
-<h2>Let your phone do the work.</h2>
-<p>In Shortcuts, use an NFC automation to open this link. Each new visit advances the preview.</p>
-<label for="shortcut-url">Shortcut URL</label><div class="copy-row"><input id="shortcut-url" readonly><button id="copy">Copy</button></div>
-<ol><li>Create a shortcut with <strong>Random Number</strong> (1 to 999999999), then <strong>URL</strong>.</li><li>Paste the link above. Replace <code>NUMBER</code> with the Random Number variable.</li><li>Add <strong>Open URLs</strong>. Run once to test.</li><li>On iOS 26 or earlier: Automation → + → NFC, scan one sticker and select this shortcut. Choose <strong>Run Immediately</strong> if offered. On iOS 27: open the shortcut → Edit → Automation → NFC.</li></ol>
-<p>The extra number gives Safari a fresh URL for every tap. Keep the phone unlocked for the first test. Reset returns to Golden hour.</p>
-<p class="small">This page simulates lighting. It does not read NFC or control physical lights. Your iPhone reads the sticker and runs the shortcut.</p>
+<h2>One sticker. One shortcut.</h2>
+<p>Install the ready-made shortcut, then register your sticker on your iPhone. Every run starts with amber and changes to blue.</p>
+<a class="install" id="install-shortcut" href="https://www.icloud.com/shortcuts/7457aa1f99d64171826a8dd5e3ea26d2">Get Studio Tap shortcut</a>
+<p class="small">Tap Get Shortcut, then Add Shortcut. <a href="shortcuts/Studio%20Tap.shortcut">Download the signed file</a> if the iCloud link is unavailable; open it from Downloads or Files. If Studio Tap already appears in Shortcuts through iCloud sync, use that copy.</p>
+<ol><li><strong>Test the shortcut.</strong> Open Shortcuts and tap Studio Tap. Safari should show amber, then blue. Run it twice to check the repeat.</li><li><strong>Register one sticker.</strong> In Shortcuts, open Automation → + → NFC → Scan. Hold the top edge of your unlocked iPhone close to one sticker. Name it Studio sticker.</li><li><strong>Choose the action.</strong> Select Run Immediately, then Studio Tap. If you see an action editor instead, add Run Shortcut and choose Studio Tap.</li><li><strong>Try a real tap.</strong> Put the tag on paper, wood, or plastic, away from metal and other tags. Move the phone away between scans.</li></ol>
+<details><summary>Different iOS screen?</summary><p>On iOS 27, Apple describes opening Studio Tap → Edit → Automation to add the NFC trigger. Older versions may show Ask Before Running; turn that off. Test unlocked before filming.</p></details>
+<details><summary>No sticker handy?</summary><p>Close this panel and tap Rehearse tap in 3 seconds. Move the phone toward your prop while the countdown runs. This is a timed simulation, not an NFC scan. Reset rehearsal cancels the countdown.</p></details>
+<details><summary>Prefer cycling all three colors?</summary><p><a href="shortcuts/Studio%20Cycle.shortcut">Download Studio Cycle</a> and choose that shortcut for your NFC automation instead.</p></details>
+<details><summary>Build the shortcut manually</summary><p>Add Random Number (1 to 999999999), URL, then Open URLs. Paste this URL and replace NUMBER with the Random Number variable.</p>
+<label for="shortcut-url">Shortcut URL</label><div class="copy-row"><input id="shortcut-url" readonly><button id="copy">Copy</button></div></details>
+<p class="small">The sticker needs no programming for this automation. Your phone recognizes its identifier. This page simulates lighting and cannot read NFC or control physical lights. Cue the iPad manually during the take.</p>
 </section>
 <footer>Made for the next take.</footer>
 <noscript>Enable JavaScript to change the preview scenes.</noscript>
