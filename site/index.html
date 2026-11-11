@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#151a27"><meta name="apple-mobile-web-app-capable" content="yes">
+<title>Studio Tap</title><link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+</head>
+<body>
+<main>
+<header><a class="brand" href="./" aria-label="Studio Tap home"><svg viewBox="0 0 28 28" aria-hidden="true"><path d="M6 9a7 7 0 0 1 0 10M11 5a13 13 0 0 1 0 18M17 2a19 19 0 0 1 0 24"/></svg>Studio Tap</a><span class="badge">Light preview</span></header>
+<section class="intro"><p>One tap. A different atmosphere.</p><h1>Your recording room.</h1></section>
+<div class="room" role="img" aria-label="Illustrated recording office with warm amber lighting" id="room">
+<svg viewBox="0 0 640 490" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<defs>
+<linearGradient id="wall" x2="0" y2="1"><stop stop-color="#232b3b"/><stop offset="1" stop-color="#101522"/></linearGradient>
+<radialGradient id="glow"><stop class="light-stop" stop-opacity=".65"/><stop class="light-stop" offset="1" stop-opacity="0"/></radialGradient>
+<linearGradient id="screen" x2="1" y2="1"><stop stop-color="#162838"/><stop offset="1" stop-color="#080e16"/></linearGradient>
+<filter id="blur"><feGaussianBlur stdDeviation="7"/></filter>
+<pattern id="slats" width="15" height="15" patternUnits="userSpaceOnUse"><rect width="7" height="15" fill="#101623"/></pattern>
+</defs>
+<path d="M0 0H640V384L320 470 0 384Z" fill="url(#wall)"/>
+<path d="M0 0L90 62V349L0 384Z" fill="#1a2230"/><path d="M640 0L550 62V349L640 384Z" fill="#1a2230"/>
+<path d="M0 384L90 349H550L640 384V490H0Z" fill="#101520"/>
+<path d="M90 62H550V349H90Z" fill="none" stroke="#394052"/>
+<ellipse cx="320" cy="190" rx="350" ry="220" fill="url(#glow)"/>
+<path class="light" d="M90 210V62H550V210" fill="none" stroke-width="12" filter="url(#blur)" opacity=".9"/>
+<path class="light" d="M90 210V62H550V210" fill="none" stroke-width="3"/>
+<rect x="130" y="102" width="77" height="121" rx="3" fill="url(#slats)"/>
+<rect x="435" y="102" width="77" height="121" rx="3" fill="url(#slats)"/>
+<path d="M388 121H490" stroke="#101724" stroke-width="7"/>
+<rect x="406" y="96" width="9" height="23" rx="1" fill="#566579"/><rect x="417" y="91" width="7" height="28" rx="1" fill="#88918b"/>
+<path d="M469 118V93m0 12q-26-5-17-20 22 4 17 20m0-2q2-24 17-20 7 18-17 20" fill="#314b49" stroke="#496560" stroke-width="3"/>
+<path d="M457 108H481L477 120H461Z" fill="#c0b7a4"/>
+<ellipse cx="320" cy="390" rx="193" ry="39" fill="#080d16" opacity=".5"/>
+<path d="M155 288L139 391M487 288L505 391" stroke="#30394a" stroke-width="12"/>
+<path d="M130 267H507L527 291H111Z" fill="#56505a"/><path d="M111 291H527V300H111Z" fill="#252b37"/>
+<path class="light" d="M119 301H519" stroke-width="4" filter="url(#blur)"/>
+<rect x="228" y="170" width="185" height="111" rx="6" fill="#080e17" stroke="#414a5a" stroke-width="3"/>
+<rect x="235" y="177" width="171" height="94" rx="2" fill="url(#screen)"/>
+<path class="light" d="M246 236L271 222 296 239 321 207 346 220 371 199 395 211" fill="none" stroke-width="2" opacity=".65"/>
+<path d="M246 190H279M246 196H266" stroke="#637087" stroke-width="3"/>
+<path d="M320 282V288M300 288H340" stroke="#586071" stroke-width="6"/>
+<rect x="175" y="226" width="33" height="57" rx="3" fill="#141b29" stroke="#41495a"/><circle cx="191" cy="258" r="10" fill="#080e17" stroke="#424c60"/><circle cx="191" cy="237" r="4" fill="#63718a"/>
+<rect x="432" y="226" width="33" height="57" rx="3" fill="#141b29" stroke="#41495a"/><circle cx="448" cy="258" r="10" fill="#080e17" stroke="#424c60"/><circle cx="448" cy="237" r="4" fill="#63718a"/>
+<path d="M274 282H361L369 291H265Z" fill="#798091"/>
+<path d="M147 275V203L210 183" fill="none" stroke="#758092" stroke-width="5"/><rect x="204" y="175" width="15" height="35" rx="7" fill="#1a2333" stroke="#7b8494" stroke-width="2"/>
+<path d="M276 353L266 312Q320 289 374 312L364 353Z" fill="#131d2b" stroke="#3d485c" stroke-width="3"/>
+<path d="M278 352Q320 339 362 352V366H278Z" fill="#263144"/><path d="M320 364V409M320 407L281 422M320 407L359 422" stroke="#546075" stroke-width="6"/>
+<circle cx="281" cy="425" r="5" fill="#080e17"/><circle cx="359" cy="425" r="5" fill="#080e17"/>
+<rect x="532" y="193" width="6" height="116" rx="3" class="light-fill"/><path class="light" d="M535 194V308" stroke-width="17" filter="url(#blur)"/>
+<ellipse cx="535" cy="316" rx="18" ry="5" fill="#333d50"/>
+</svg>
+<span class="room-label"><span class="dot"></span><span id="room-caption">Warm amber</span></span>
+</div>
+<section class="controls" aria-label="Scene controls">
+<div class="scene-heading"><div><p class="small">Current scene</p><h2 id="scene-name">Golden hour</h2></div><span id="scene-count">1 / 3</span></div>
+<div class="presets" role="group" aria-label="Choose a lighting scene">
+<button data-scene="golden" aria-pressed="true"><span class="swatch golden"></span>Golden</button>
+<button data-scene="ocean" aria-pressed="false"><span class="swatch ocean"></span>Ocean</button>
+<button data-scene="rose" aria-pressed="false"><span class="swatch rose"></span>Rose</button>
+</div>
+<button class="primary" id="next">Change scene <span aria-hidden="true">↻</span></button>
+<p id="status" class="status" role="status">Try a scene, then connect your sticker.</p>
+<div class="utility"><button id="reset">Reset rehearsal</button><button id="setup-button" aria-expanded="false" aria-controls="setup">Connect a sticker</button></div>
+</section>
+<section id="setup" hidden>
+<h2>Let your phone do the work.</h2>
+<p>In Shortcuts, use an NFC automation to open this link. Each new visit advances the preview.</p>
+<label for="shortcut-url">Shortcut URL</label><div class="copy-row"><input id="shortcut-url" readonly><button id="copy">Copy</button></div>
+<ol><li>Create a shortcut with <strong>Random Number</strong> (1 to 999999999), then <strong>URL</strong>.</li><li>Paste the link above. Replace <code>NUMBER</code> with the Random Number variable.</li><li>Add <strong>Open URLs</strong>. Run once to test.</li><li>On iOS 26 or earlier: Automation → + → NFC, scan one sticker and select this shortcut. Choose <strong>Run Immediately</strong> if offered. On iOS 27: open the shortcut → Edit → Automation → NFC.</li></ol>
+<p>The extra number gives Safari a fresh URL for every tap. Keep the phone unlocked for the first test. Reset returns to Golden hour.</p>
+<p class="small">This page simulates lighting. It does not read NFC or control physical lights. Your iPhone reads the sticker and runs the shortcut.</p>
+</section>
+<footer>Made for the next take.</footer>
+<noscript>Enable JavaScript to change the preview scenes.</noscript>
+</main>
+</body></html>
