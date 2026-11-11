@@ -12,7 +12,7 @@
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>9E9ECDB6-07F7-4978-95C7-AA0FDDC3D88F</string>
+				<string>FF64B92E-83AC-4DF2-B507-98F03C9B7F9D</string>
 				<key>WFRandomNumberMaximum</key>
 				<string>999999999</string>
 				<key>WFRandomNumberMinimum</key>
@@ -24,6 +24,8 @@
 			<string>is.workflow.actions.url</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
+				<key>UUID</key>
+				<string>E6CFB8DD-3114-4973-AFBC-2560D745381B</string>
 				<key>WFURLActionURL</key>
 				<dict>
 					<key>Value</key>
@@ -35,7 +37,7 @@
 								<key>OutputName</key>
 								<string>Random Number</string>
 								<key>OutputUUID</key>
-								<string>9E9ECDB6-07F7-4978-95C7-AA0FDDC3D88F</string>
+								<string>FF64B92E-83AC-4DF2-B507-98F03C9B7F9D</string>
 								<key>Type</key>
 								<string>ActionOutput</string>
 							</dict>
@@ -52,7 +54,22 @@
 			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.openurl</string>
 			<key>WFWorkflowActionParameters</key>
-			<dict/>
+			<dict>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>URL</string>
+						<key>OutputUUID</key>
+						<string>E6CFB8DD-3114-4973-AFBC-2560D745381B</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+			</dict>
 		</dict>
 	</array>
 	<key>WFWorkflowClientVersion</key>

@@ -6,6 +6,7 @@ import uuid
 ROOT = Path(__file__).resolve().parents[1]
 for name, action in [('Studio Tap', 'rehearse'), ('Studio Cycle', 'next')]:
     random_id = str(uuid.uuid4()).upper()
+    url_id = str(uuid.uuid4()).upper()
     prefix = f'https://erik-cupsa.github.io/nfc-studio-demo/?action={action}&take='
     token = {'Value': {'string': prefix + '\ufffc', 'attachmentsByRange': {
         '{%d, 1}' % len(prefix): {'OutputUUID': random_id, 'Type': 'ActionOutput', 'OutputName': 'Random Number'}
@@ -19,8 +20,8 @@ for name, action in [('Studio Tap', 'rehearse'), ('Studio Cycle', 'next')]:
         'WFWorkflowActions': [
             {'WFWorkflowActionIdentifier': 'is.workflow.actions.number.random', 'WFWorkflowActionParameters': {
                 'WFRandomNumberMinimum': '1', 'WFRandomNumberMaximum': '999999999', 'UUID': random_id}},
-            {'WFWorkflowActionIdentifier': 'is.workflow.actions.url', 'WFWorkflowActionParameters': {'WFURLActionURL': token}},
-            {'WFWorkflowActionIdentifier': 'is.workflow.actions.openurl', 'WFWorkflowActionParameters': {}}
+            {'WFWorkflowActionIdentifier': 'is.workflow.actions.url', 'WFWorkflowActionParameters': {'WFURLActionURL': token, 'UUID': url_id}},
+            {'WFWorkflowActionIdentifier': 'is.workflow.actions.openurl', 'WFWorkflowActionParameters': {'WFInput': {'Value': {'OutputUUID': url_id, 'Type': 'ActionOutput', 'OutputName': 'URL'}, 'WFSerializationType': 'WFTextTokenAttachment'}}}
         ],
         'WFWorkflowInputContentItemClasses': [], 'WFWorkflowOutputContentItemClasses': [],
         'WFWorkflowImportQuestions': [], 'WFWorkflowTypes': [], 'WFQuickActionSurfaces': [],

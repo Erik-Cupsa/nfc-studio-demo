@@ -3,7 +3,7 @@
 A recording demo for an iPhone: a passive NFC sticker launches an Apple shortcut, which opens an illustrated studio that changes from amber to blue. Physical studio lighting is not connected. An iPad cue can be performed manually at the same moment.
 
 - [Open the phone demo](https://erik-cupsa.github.io/nfc-studio-demo/)
-- [Install Studio Tap in Shortcuts](https://www.icloud.com/shortcuts/7457aa1f99d64171826a8dd5e3ea26d2)
+- [Install Studio Tap in Shortcuts](https://www.icloud.com/shortcuts/0de5f08706af4bd48c0080ee89d8d214)
 - [Open phone setup instructions](https://erik-cupsa.github.io/nfc-studio-demo/?setup=1)
 
 ## The three phone-only steps
